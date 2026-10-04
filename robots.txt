@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /panel.html
+Disallow: /app/
 
 Sitemap: https://myshoppingcarttr-cyber.github.io/hsn-otomotiv/sitemap.xml
