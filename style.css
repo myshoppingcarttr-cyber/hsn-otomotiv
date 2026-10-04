@@ -334,3 +334,5 @@ th{border-bottom-color:var(--accent)}
   .visit iframe{height:360px}
   .pre ul{columns:1}
 }
+/* teslim: dar ekranda uzun düğmeler taşmasın */
+@media (max-width:560px){.btn{white-space:normal;text-align:center;max-width:100%;line-height:1.25}form .btn,.btn-sos,.btn-wa{width:100%}}
