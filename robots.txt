@@ -3,4 +3,4 @@ Allow: /
 Disallow: /panel.html
 Disallow: /app/
 
-Sitemap: https://myshoppingcarttr-cyber.github.io/hsn-otomotiv/sitemap.xml
+Sitemap: https://hsnoto.com.tr/sitemap.xml

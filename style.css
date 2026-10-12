@@ -336,3 +336,9 @@ th{border-bottom-color:var(--accent)}
 }
 /* teslim: dar ekranda uzun düğmeler taşmasın */
 @media (max-width:560px){.btn{white-space:normal;text-align:center;max-width:100%;line-height:1.25}form .btn,.btn-sos,.btn-wa{width:100%}}
+
+/* Dijitabela tasarım kredisi (müşteri sitesi: düşük vurgu) */
+.dj-tasarim,.dj-tasarim a{font-size:.78rem;color:var(--mute);opacity:.8;text-decoration:none;letter-spacing:.02em}
+.dj-tasarim:hover,.dj-tasarim a:hover{color:var(--fg);opacity:1}
+.foot-bottom .dj-tasarim{margin-left:auto}
+.dj-tasarim-solo{text-align:center;padding:0 16px 24px;margin:0}
