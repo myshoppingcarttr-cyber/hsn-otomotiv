@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /panel.html
+Disallow: /hesabim.html
 Disallow: /app/
 
 Sitemap: https://hsnoto.com.tr/sitemap.xml

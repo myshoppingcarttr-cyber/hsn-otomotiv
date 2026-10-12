@@ -46,7 +46,7 @@
       var d = V.services[id], y = hz[id] || {};
       if (!d) return;
       ekle(d[1], y.desc);
-      if (y.img) document.querySelectorAll('img[src$="img/' + d[2] + '"]').forEach(function (im) {
+      if (y.img) document.querySelectorAll('img[src*="img/' + d[2].replace(/\.(jpg|webp)$/, '.') + '"]').forEach(function (im) {
         var k = im.closest("li,article,figure,a,div");
         if (k && k.innerText.indexOf(d[0]) >= 0 || (im.closest('[id="' + id + '"]'))) im.src = y.img;
       });
@@ -56,7 +56,7 @@
     // Galeri: gizlenenler + yeni eklenen fotoğraflar
     var g = I.galeri || {};
     document.querySelectorAll("#shots, .gallery, .mosaic").forEach(function (kap) {
-      (g.gizli || []).forEach(function (f) { kap.querySelectorAll('a[href$="img/' + f + '"]').forEach(function (a) { (a.closest("figure") || a).style.display = "none"; }); });
+      (g.gizli || []).forEach(function (f) { kap.querySelectorAll('a[href*="img/' + f.replace(/\.(jpg|webp)$/, '.') + '"]').forEach(function (a) { (a.closest("figure") || a).style.display = "none"; }); });
       if (kap.dataset.hsnEk) return;
       kap.dataset.hsnEk = "1";
       var tpl = kap.firstElementChild; if (!tpl) return;
